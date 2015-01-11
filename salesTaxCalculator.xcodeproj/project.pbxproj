@@ -13,6 +13,7 @@
 		B4C89BA91A3E6913004F91DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4C89BA81A3E6913004F91DA /* Images.xcassets */; };
 		B4C89BAC1A3E6913004F91DA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4C89BAA1A3E6913004F91DA /* LaunchScreen.xib */; };
 		B4C89BB81A3E6913004F91DA /* salesTaxCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C89BB71A3E6913004F91DA /* salesTaxCalculatorTests.swift */; };
+		B4C89BC21A3E73A8004F91DA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C89BC11A3E73A8004F91DA /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,9 @@
 		B4C89BB11A3E6913004F91DA /* salesTaxCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = salesTaxCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4C89BB61A3E6913004F91DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4C89BB71A3E6913004F91DA /* salesTaxCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = salesTaxCalculatorTests.swift; sourceTree = "<group>"; };
+		B4C89BC11A3E73A8004F91DA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		B4C89BC31A3E7462004F91DA /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		B4C89BC41A3EAC13004F91DA /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4C89BC21A3E73A8004F91DA /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +64,8 @@
 		B4C89B931A3E6913004F91DA = {
 			isa = PBXGroup;
 			children = (
+				B4C89BC31A3E7462004F91DA /* Bridging-Header.h */,
+				B4C89BC11A3E73A8004F91DA /* libsqlite3.dylib */,
 				B4C89B9E1A3E6913004F91DA /* salesTaxCalculator */,
 				B4C89BB41A3E6913004F91DA /* salesTaxCalculatorTests */,
 				B4C89B9D1A3E6913004F91DA /* Products */,
@@ -77,6 +84,7 @@
 		B4C89B9E1A3E6913004F91DA /* salesTaxCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				B4C89BC41A3EAC13004F91DA /* Location.gpx */,
 				B4C89BA11A3E6913004F91DA /* AppDelegate.swift */,
 				B4C89BA31A3E6913004F91DA /* ViewController.swift */,
 				B4C89BA51A3E6913004F91DA /* Main.storyboard */,
@@ -293,6 +301,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -328,6 +337,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -405,6 +415,7 @@
 				B4C89BBD1A3E6913004F91DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B4C89BBE1A3E6913004F91DA /* Build configuration list for PBXNativeTarget "salesTaxCalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +424,7 @@
 				B4C89BC01A3E6913004F91DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
